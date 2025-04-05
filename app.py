@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, session
 
-# создать объект класса Flask
+# создать объект класса Flas
 application = Flask(__name__)
 application.secret_key = "BOOM"
 # это объект управляет авторизацией
