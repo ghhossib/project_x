@@ -1,7 +1,7 @@
 from Models.Base import *
 
 class Director_post(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     name = CharField()
 
     class Meta:

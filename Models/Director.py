@@ -3,7 +3,7 @@ from Models.Post import Post
 
 
 class Director(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     surename = CharField()
     middle_name = CharField()
     full_name_in_the_genetive_case = TextField()

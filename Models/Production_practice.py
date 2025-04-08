@@ -1,9 +1,9 @@
 from Models.Base import *
 
 class Production_practice(Base):
-    id = PrimaryKeyField
-    practice_name = CharField
-    module_name = CharField
+    id = PrimaryKeyField()
+    practice_name = CharField()
+    module_name = CharField()
 
 
     class Meta:

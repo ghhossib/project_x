@@ -1,7 +1,7 @@
 from Models.Base import *
 
 class Post(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     name = CharField()
 
     class Meta:

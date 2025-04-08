@@ -3,7 +3,7 @@ from Models.Roles import Roles
 
 
 class Metodical_director(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     surename = CharField()
     name = CharField()
     middle_name = CharField()

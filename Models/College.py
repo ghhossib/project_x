@@ -4,7 +4,7 @@ from Models.Students_director import Students_director
 
 
 class College(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     groups_id = ForeignKeyField(Groups)
     students_director_id = ForeignKeyField(Students_director)
     name = CharField()

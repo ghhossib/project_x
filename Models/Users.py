@@ -3,9 +3,9 @@ from Models.Roles import Roles
 
 
 class Users(Base):
-    id = PrimaryKeyField
-    login = CharField
-    password = CharField
+    id = PrimaryKeyField()
+    login = CharField()
+    password = CharField()
     role_id = ForeignKeyField(Roles)
 
     class Meta:

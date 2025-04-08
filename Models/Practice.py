@@ -4,13 +4,13 @@ from Models.Production_practice import Production_practice
 
 
 class Practice(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     organization = CharField()
     production_practice_id = ForeignKeyField(Production_practice)
     address = TextField()
     practice_time = CharField()
-    start_date = DateField
-    end_date = DateField
+    start_date = DateField()
+    end_date = DateField()
     director_id = ForeignKeyField(Director)
 
 

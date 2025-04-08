@@ -1,8 +1,8 @@
 from Models.Base import *
 
 class Roles(Base):
-    id = PrimaryKeyField
-    name = CharField
+    id = PrimaryKeyField()
+    name = CharField()
 
 
     class Meta:

@@ -5,7 +5,7 @@ from Models.Practice import Practice
 
 
 class Metodical_Groups_Practice(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     metodical_director_id = ForeignKeyField(Metodical_director)
     group_id = ForeignKeyField(Groups)
     practice_id = ForeignKeyField(Practice)

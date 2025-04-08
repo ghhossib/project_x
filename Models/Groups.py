@@ -1,7 +1,7 @@
 from Models.Base import *
 
 class Groups(Base):
-    id = PrimaryKeyField
+    id = PrimaryKeyField()
     name = CharField()
 
     class Meta:
