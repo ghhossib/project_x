@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.name{
+    position: relative;
+    left: 810px;
+    top: 130px;
+    color: #5D5C60;
+}
+.window{
+    width: 325px;
+    height: 329px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 146px;
+}
+.login{
+    width: 252px;
+    height: 33px;
+    position: relative;
+    top: 42px;
+    left: 30px;
+    border-radius: 10px;
+    border-color: #5D5C60;
+}
+.password{
+    width: 252px;
+    height: 33px;
+    position: relative;
+    top: 72px;
+    left: 30px;
+    border-radius: 10px;
+    border-color: #5D5C60;
+}
+.ssylka{
+    position: relative;
+    top: 100px;
+    left: 30px;
+    text-decoration: none;
+    color: #62A7DA;
+}
+.vhod{
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+}
+.vhod button{
+    width: 78px;
+    height: 28px;
+    border-radius: 7px;
+    color: white;
+    background-color: #62A7DA;
+    border-color: #62A7DA;
+}
+.window_hr{
+    position: relative;
+    top: 120px;
+    width: 290px;
+}
+.zapis{
+    position: relative;
+    top: 140px;
+    left: 30px;
+
+
+
+}
+.zapis button{
+    height: 28px;
+    border-radius: 7px;
+}
+
+
+.window2{
+    width: 325px;
+    height: 359px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 146px;
+}
+.login2{
+    width: 252px;
+    height: 33px;
+    position: relative;
+    top: 42px;
+    left: 30px;
+    border-radius: 10px;
+    border-color: #5D5C60;
+}
+.password2{
+    width: 252px;
+    height: 33px;
+    position: relative;
+    top: 62px;
+    left: 30px;
+    border-radius: 10px;
+    border-color: #5D5C60;
+}
+.password32{
+    width: 252px;
+    height: 33px;
+    position: relative;
+    top: 82px;
+    left: 30px;
+    border-radius: 10px;
+    border-color: #5D5C60;
+}
+.vhod2 button{
+    position: relative;
+    top: 100px;
+    left: 80px;
+    width: 150px;
+    height: 28px;
+    border-radius: 7px;
+    color: white;
+    background-color: #62A7DA;
+    border-color: #62A7DA;
+}
+.window_hr2{
+    width: 280px;
+    position: relative;
+    top: 110px;
+}
+.zapis2{
+    position: relative;
+    top: 130px;
+    left: 30px;
+}
+.zapis2 button{
+    height: 28px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+header{
+
+    background-color: white;
+    width: auto;
+    height: 50px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+}
+.out{
+    font-size: 25px;
+    text-align: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.ramka{
+    width: 870px;
+    height: 1500px;
+    border-radius: 7px;
+    border-style: solid; /* стиль рамки в виде сплошной линии */
+    border-width: 1px; /* толщина рамки */
+    border-color: #A8A8A8;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+    display: table;
+}
+.kyrs1{
+
+    width: 783px;
+
+    margin-left: 70px;
+    margin-right: auto;
+    position: relative;
+    top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+.kyrs2{
+
+    width: 783px;
+
+    margin-left: 70px;
+    margin-right: auto;
+    position: relative;
+    top: 70px;
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.kyrs3{
+
+    width: 783px;
+
+    margin-left: 70px;
+    margin-right: auto;
+    position: relative;
+    top: 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+.kyrs4{
+
+    width: 783px;
+
+    margin-left: 70px;
+    margin-right: auto;
+    position: relative;
+    top: 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.group_box{
+    width: 131px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #62A7DA;
+    background-color: #62A7DA;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.group_box:hover{
+    background-color: #A8A8A8;
+}
+h2{
+    font-size: 40px;
+    color: #5D5C60;
+    text-align: left;
+    position: relative;
+    left: 20px;
+    top: 13px;
+}
+.h2k{
+    position: relative;
+    top: 50px;
+}
+.h3k{
+    position: relative;
+    top: 90px
+}
+.h4k{
+    position: relative;
+    top: 120px
+}
+.vnb{
+    position: absolute;
+    left: 70px;
+    top: 1080px;
+    width: 131px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #A8A8A8;
+    font-size: 20px;
+}
+
+ol{
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+
+}
+.list_students li{
+    margin-top: 20px;
+
+}
+input[type="checkbox"]{
+    transform: scale(2);
+    accent-color: #62A7DA;
+    position: absolute;
+    right: 0px;
+    left: 700px;
+    accent-color: #62A7DA;
+
+}
+li{
+    color: #5D5C60;
+}
+hr{
+    border-color: #EBEBEB;
+}
+.hli{
+    position: relative;
+    right: 43px;
+    width: 853px;
+    border-color: #ebebeb30;
+}
+.namegr{
+    position: relative;
+    left: 515px;
+    top: 50px;
+    color: #5D5C60;
+}
