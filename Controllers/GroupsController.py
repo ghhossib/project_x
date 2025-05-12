@@ -17,8 +17,8 @@ class GroupsController:
 
 
     @classmethod
-    def add(cls, name):
-        Groups.create(name=name)
+    def add(cls, name, course):
+        Groups.create(name=name, course=course)
 
 
     @classmethod

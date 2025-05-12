@@ -4,7 +4,7 @@ from Models.Production_practice import Production_practice
 
 
 class Practice(Base):
-    id = PrimaryKeyField()
+    id = PrimaryKeyField
     organization = CharField()
     production_practice_id = ForeignKeyField(Production_practice)
     address = TextField()

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документы студента</title>
+    <!-- Ваши скрипты и стили -->
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('logout') }}" class="out2"><p class="out">Выйти</p></a>
+    </header>
+    <div class="ramka-1">
+        <ol class="list_students">
+            <p class="namegr2">{{ group_name }}</p>
+            <li>
+                {{ student.surename }} {{ student.name }}
+                <div class="checkselect">
+                    <!-- Чекбоксы документов -->
+                     <label><input type="checkbox" name="brands[]" value="2"> Направление на
+                    практику</label>
+                  <label><input type="checkbox" name="brands[]" value="3"> Договор</label>
+                  <label><input type="checkbox" name="brands[]" value="4"> Лист инструктажа</label>
+                  <label><input type="checkbox" name="brands[]" value="5"> Дневник практики</label>
+                  <label><input type="checkbox" name="brands[]" value="6"> Отзыв руководителя
+                    от организации</label>
+                  <label><input type="checkbox" name="brands[]" value="6"> Аттестационный
+                    лист</label>
+                </div>
+                <a class="zapolnit" href="{{ url_for('zapolnenie_dokumentov', student_id=student.id) }}">
+                    Заполнить
+                </a>
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/material-symbols_delete-outline (4).svg') }}">
+                </a>
+            </li>
+            <hr class="hli">
+        </ol>
+    </div>
+    <a href="/access/data_students.html">
+        <button class="gogo2">Сгенерировать документы</button>
+    </a>
+
+    <!-- Ваши скрипты -->
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                <script src="{{url_for('static', filename='js/js.js')}}" ></script>
+</body>
+{% endblock %}

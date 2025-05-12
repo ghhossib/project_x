@@ -1,8 +1,9 @@
 from Models.Base import *
 from Models.Roles import Roles
+from flask_login import UserMixin
 
 
-class Users(Base):
+class Users(UserMixin,Base):
     id = PrimaryKeyField()
     login = CharField()
     password = CharField()

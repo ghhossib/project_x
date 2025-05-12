@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Загрузка и скачивание DOCX</title>
-</head>
+{% extends 'base.html' %}
+{% block content %}
 <body>
-    <h1>Загрузите файл</h1>
-    <form method="post" action="/upload" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".docx" required>
-        <button type="submit">Загрузить</button>
-    </form>
+    <div class="name">
+        <h1>Практика "ЯМК"</h1>
+    </div>
+    <div class="container">
+        <div class="window">
+            <form action="" method="post">
+                <div class="input">
+                <input class="login" name="login" type="text" placeholder="Логин">
+                <input class="password" name="password" type="password" placeholder="Пароль">
+            </div>
+            <div class="entry">
+                <a class="ssylka" href="#">Забыли пароль?</a>
+                <a class="vhod" href="/vhod"><button>Вход</button></a>
+            </div>
+            </form>
 
-    <h2>Список файлов</h2>
-    <ul>
-        {% for file in files %}
-            <li><a href="/download/{{ file[0] }}">{{ file[1] }}</a></li>
-        {% endfor %}
-    </ul>
+            <hr class="window_hr">
+            <div class="zapis">
+                <a href="/registracia"><button>Создать учетную запись</button></a>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+{% endblock %}
