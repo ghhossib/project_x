@@ -483,7 +483,7 @@ img{
     top: 90px;
     left: 1160px;
     width: 230px;
-    height: 60px;
+    height: 65px;
     background-color: #62A7DA;
     border: #62A7DA;
     border-radius: 10px;
@@ -500,17 +500,19 @@ img{
 .zzzz {
     width: 200px;
     height: 40px;
-    margin: 45px;
+    margin: 23px;
     text-align: center;
     border-radius: 10px;
     border-color: #5D5C60;
+    font-size: 13px;
+    padding: 5px;
 }
+
 p{
     font-size: 25px;
     color: #5D5C60;
     position: relative;
     top: 18px;
-    left: 20px;
 }
 .file{
     width: 160px;
@@ -533,4 +535,11 @@ p{
     position: relative;
     top: 60px;
     left: 530px;
+}
+.document_name {
+    font-size: 25px;
+    color: #5D5C60;
+    position: relative;
+    top: 18px;
+    margin-left: 21px;
 }
