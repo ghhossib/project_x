@@ -104,6 +104,28 @@ def studenti(group_id):
         return redirect('/logout')
 
 
+@application.route('/students-documents', methods=['POST'])
+@login_required
+def students_documents():
+    if current_user.role_id.id != 1:
+        return redirect('/logout')
+
+    selected_student_ids = request.form.getlist('selected_students')
+    group_id = request.form.get('group_id')
+    group = GroupsController.show(group_id)
+
+    students = []
+    for student_id in selected_student_ids:
+        student = StudentsController.show(student_id)
+        if student:
+            students.append(student)
+
+    return render_template('student_documents.html',
+                           title="Документы студентов",
+                           students=students,
+                           group_name=group.name if group else "Группа не найдена")
+
+
 @application.route('/data-students/<int:student_id>', methods=['POST', 'GET'])
 @login_required
 def data_students(student_id):

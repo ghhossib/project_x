@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документы студента</title>
-    <!-- Ваши скрипты и стили -->
+
 </head>
 <body>
     <header>
@@ -13,8 +13,10 @@
     <div class="ramka-1">
         <ol class="list_students">
             <p class="namegr2">{{ group_name }}</p>
+
             <li>
                 {{ student.surename }} {{ student.name }}
+
                 <div class="checkselect">
                     <!-- Чекбоксы документов -->
                      <label><input type="checkbox" name="brands[]" value="2"> Направление на
@@ -30,7 +32,7 @@
                 <a class="zapolnit" href="{{ url_for('zapolnenie_dokumentov', student_id=student.id) }}">
                     Заполнить
                 </a>
-                <a href="#">
+                <a href="#" class="delete-btn">
                     <img src="{{ url_for('static', filename='img/material-symbols_delete-outline (4).svg') }}">
                 </a>
             </li>
